@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-image: url('vecteezy_social-media-animatio_16466163-ezgif.com-video-to-gif-converter.gif'); 
+    background-position: center;
+    background-repeat: repeat;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Layout */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Navigation */
+header nav {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('bgb.jpg'); 
+    background-position: center;
+    background-repeat: repeat;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    color: #000;
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #000000;
+    box-shadow: 0px 0px 8px rgba(30, 144, 255, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background: linear-gradient(45deg, #000000, #000000);
+    color: white;
+    border-color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #000000, #000000);
+}
+
+/* Projects */
+.project {
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #ffffff;
+}
+
+.cv-preview {
+    width: 100%; /* Adjust width as needed */
+    max-width: 500px; /* Prevents image from being too large */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Skills */
+h2 {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(45deg, #333, #222);
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        width: 100%;
+    }
+}

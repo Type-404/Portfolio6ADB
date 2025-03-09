@@ -1,0 +1,32 @@
+services:
+  #backend dus onze API
+  backend:
+    build: ./backend
+    container_name: be
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+  #frontend
+  frontend:
+    build: ./frontend
+    container_name: fe
+    ports: 
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
+    restart: always
+
+  #onze database
+  mongo: 
+    image: mongo:5.0
+    container_name: db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

@@ -1,0 +1,6 @@
+beschrijf de gebruikte docker commando's:
+- docker exec
+ een nieuw process binnen een draaiende container uitvoeren
+
+- docker logs
+wordt gebruikt om de logbestanden van een container weer te laten zien
